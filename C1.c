@@ -28,7 +28,7 @@ void vowel(char *rea, int siz)
 }
 int main(int arg0, char ** argv)
 {
-    int index = 0;
+   /* int index = 0;
     char output[45000];
     char t = ' ';
 
@@ -50,7 +50,18 @@ int main(int arg0, char ** argv)
 
     printf("\n\n The Vowel Count\n");
     vowel(output,size);
-
+    */
+    double i = 0;
+    int y = 0;
+    double sum = 0;
+    for(y = 1; y< 10;y++)
+    {
+        i = y;
+        printf("%d %f\n",1/y,1/y);
+        sum = sum + (1/i);
+        if(y % 50 == 0)
+            printf("The sum is: %d so far\n",sum);
+    }
     return 0;
 }
 
